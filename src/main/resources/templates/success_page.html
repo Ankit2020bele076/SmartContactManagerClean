@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head><title>Welcome to home page</title></head>
+<body>
+    <div id="content" class="text-center mt-5">
+        <h1 class="text-2xl text-green-400">Email is verified, Now your account is enabled</h1>
+        <a th:href="@{'/login'}" class="bg-gray-900 mt-2 text-white px-3 py-2 rounded">Login</a>
+    </div>
+    <script>console.log("home")</script>
+</body>
+</html>
